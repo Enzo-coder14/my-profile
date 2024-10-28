@@ -1,0 +1,224 @@
+/* Styles généraux pour le corps de la page */
+body {
+  background-color: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Conteneur principal */
+.container {
+  width: 800px;
+  max-width: 90%;
+  margin: 40px auto;
+}
+
+/* Cartes blanches */
+.card-white {
+  background-color: #ffffff;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Centrage du texte */
+.text-center {
+  text-align: center;
+}
+
+/* Titre principal */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  color: #333333;
+}
+
+/* Mise en évidence du nom */
+.text-highlight {
+  color: #3498db; /* Bleu moderne */
+}
+
+/* Styles pour les titres */
+h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #3498db; /* Bleu moderne */
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+/* Styles pour les paragraphes */
+p {
+  margin-bottom: 15px;
+}
+
+/* Liens */
+a {
+  color: #3498db; /* Bleu moderne */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2980b9; /* Bleu plus foncé au survol */
+  text-decoration: underline;
+}
+
+/* Bouton principal */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #3498db; /* Bleu moderne */
+  color: #ffffff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9; /* Bleu plus foncé au survol */
+}
+
+/* Bouton de soumission */
+.btn-submit {
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #555555;
+}
+
+/* Image de profil ronde */
+.img-circle {
+  border-radius: 50%;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 20px auto;
+  border: 5px solid #3498db; /* Bleu moderne */
+}
+
+/* Liste en ligne */
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-inline > li {
+  display: inline;
+  padding: 0 20px;
+}
+
+/* Liens sociaux */
+.social-link {
+  color: #333333;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #3498db; /* Bleu moderne */
+}
+
+/* Formulaire */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Effet au survol des cartes */
+.card-white:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Media Queries pour le Responsive Design */
+
+/* Pour les écrans de moins de 960px */
+@media (max-width: 960px) {
+  /* Cette section s'applique aux écrans de moins de 960px */
+  .container {
+    width: 700px;
+  }
+}
+
+/* Pour les écrans de moins de 720px */
+@media (max-width: 720px) {
+  /* Cette section s'applique aux écrans de moins de 720px */
+  .container {
+    width: 500px;
+  }
+}
+
+/* Pour les écrans de moins de 540px */
+@media (max-width: 540px) {
+  /* Cette section s'applique aux écrans de moins de 540px */
+  .container {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+/* Pour les écrans de moins de 360px */
+@media (max-width: 360px) {
+  /* Cette section s'applique aux écrans de moins de 360px */
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+  }
+
+  .btn, .btn-submit {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
